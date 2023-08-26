@@ -5,9 +5,26 @@
     --slate-cl: #434455;
     --white-cl: #FFFFFF;
     --cloud-cl: #F4F4FD;
+    --cornflower-cl: #E7E9FC;
 
     --main-font: Roboto, sans-serif;
     --secondary-font: Raleway, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -71,9 +88,16 @@ address {
     letter-spacing: 0.02em;
 }
 
+.container {
+    /*width: 1158px;*/
+}
+
 /**
   HEADER
  */
+.header {
+
+}
 .header-nav-list-item {
     font-weight: 500;
     line-height: 1.5;
@@ -105,12 +129,14 @@ address {
  */
 .footer {
     background-color: var(--navyblue-cl);
+    padding: 102px 1020px 100px 156px;
 }
 
 .footer-text {
     color: var(--cloud-cl);
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-top: 18px;
 }
 
 .footer-logo-accent {
@@ -137,6 +163,7 @@ address {
 .hero {
     background-color: var(--navyblue-cl);
     color: var(--white-cl);
+    padding: 188px 472px;
 }
 
 .hero-title {
@@ -145,6 +172,9 @@ address {
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
+
+    width: 496px;
+    margin-bottom: 40px;
 }
 
 .hero-btn {
@@ -159,9 +189,35 @@ address {
 /**
    FEATURE
  */
+.feature{
+    padding: 120px 156px ;
+}
 
 .feature-subtitle {
     color: var(--navyblue-cl);
+
+    padding-bottom: 8px;
+}
+
+.feature-list {
+    display: inline-flex;
+    gap: 24px;
+}
+
+/**
+   ACTION
+ */
+.action{
+    padding: 0 156px 120px;
+}
+
+.action-list {
+    display: inline-flex;
+    gap: 24px;
+}
+
+.action .studio-title {
+    padding-bottom: 72px;
 }
 
 /**
@@ -170,6 +226,7 @@ address {
 
 .team {
     background-color: var(--cloud-cl);
+    padding: 120px 156px ;
 }
 
 .team-item {
@@ -179,10 +236,22 @@ address {
 .team-subtitle {
     text-align: center;
     color: var(--navyblue-cl);
+    padding-top: 32px;
+    padding-bottom: 8px;
 }
 
 .team-text {
     text-align: center;
+    padding-bottom: 32px;
+}
+
+.team-list {
+    display: inline-flex;
+    gap: 24px;
+}
+
+.team .studio-title {
+    padding-bottom: 72px;
 }
 
 /**
@@ -194,10 +263,20 @@ address {
 /**
 PORTFOLIO
  */
+.portfolio {
+    padding: 96px 156px 120px;
+}
 .portfolio-subtitle {
     color: var(--navyblue-cl);
 }
 
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+    justify-content: center;
+}
 /**
   FILTERS
  */
@@ -210,4 +289,17 @@ PORTFOLIO
 .portfolio-btn:focus {
     background-color: var(--ocaen-cl);
     color: var(--white-cl);
+}
+
+.btn-list {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 24px;
+
+    padding-bottom: 84px;
+}
+
+.portfolio-item {
+    border: 1px solid var(--cornflower-cl);
+
 }
